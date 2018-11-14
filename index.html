@@ -1,1 +1,193 @@
-Placeholder text
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <title>The Next Step</title>
+  <!--Favicons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="images/favicons/site.webmanifest">
+  <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#ea3333">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffd1d1">
+  <!-- Meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <!--Main CSS File-->
+  <link rel="stylesheet" href="style.css">
+  <!--BootStrap JS and JQuery-->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="js/jquery.scrollTo.min.js"></script>
+</head>
+
+<body id="top" class="pulsingColor">
+  <div class="fillerbox"></div>
+  <div class="oHeader">
+    <div class="title-box" role="banner">
+      <div id="logo-div">
+        <img id="logo" role="doc" src="images/Logo.svg">
+      </div>
+      <h1 id="title-text">The Next Step.</h1>
+      <h4 id="I-need">I Need...</h4>
+      <div class="btn-group btn-group-lg" role="group" aria-labelledby="Navigation buttons">
+        <button id="button1" class="btn btn-light" onclick="$.scrollTo('#Understand',800)" role="button">Understand</button>
+        <button id="button2" class="btn btn-light" onclick="$.scrollTo('#Dispose',800)" role="button">Dispose</button>
+        <button id="button3" class="btn btn-light" onclick="$.scrollTo('#Seek',800)" role="button">Seek</button>
+        <button id="button4" class="btn btn-light" onclick="$.scrollTo('#Assist',800)" role="button">Assist</button>
+        <button id="button5" class="btn btn-light" onclick="$.scrollTo('#Call',800)" role="button">Call</button>
+      </div>
+    </div>
+      <div id="V" onclick="$.scrollTo('#Understand',500)"><img id="arrow" src="images/scroll-arrow.svg"></img></div>
+  </div>
+  <div class="halfSpace"></div>
+  <div class="timeline">
+    <!--START CARD-->
+    <div id="Understand" class="timeline-card container-fluid card">
+      <div class="card-body">
+        <h2 class="card-title" role="doc-subtitle"><b>Understand</b> the Impacts and Seek Alternatives</h2>
+        <p class="card-body" role="main">
+          Opioids are a group of natural or synthetic drugs used by individuals for pain relief
+          When used as prescribed, opioids are extremely effective. However, even when they are taken as prescribed,
+          there is extreme potential for addiction.</p>
+
+        <p class="card-body" role="main">
+          Repeated use can lead to physical dependence in just a matter of weeks, and psychological dependence in only
+          a matter of days.
+          Therefore, <i>The Next Step</i> encourages those in need of painkillers to search for other options.
+          Over the counter alternatives as well as non-drug treatments that can be used for pain control that are
+          readily available.
+          These alternatives are much safer and more accessible. Prescribed opioids can be used in dire situations, but
+          extreme caution should be taken.
+        </p>
+        </p>
+      </div>
+    </div>
+    <!--END CARD-->
+    <div class="space"></div>
+    <div class="timeline-card container-fluid card">
+      <div id="Dispose" class="card-body">
+        <h2 class="card-title" role="doc-subtitle"><b>Dispose</b> of extra opioids</h2>
+        <p class="card-body" role="main" aria-label="Disposal information">
+          If you are done using your prescription, you should dispose of these drugs immediately.
+          Proper disposal is crucial.
+          These drugs should be dropped off at one of many different disposal locations.
+          By not disposing of them, you put both yourself and family at risk.
+          This reduces the chance that you or your loved ones accidentally take the drug or intentionally misuse the
+          drug. If necessary, it is also acceptable to flush opioids down a toilet to dispose of them.
+          </br></br>
+          Below is a map with the locations of drop off boxes in
+          Connecticut. Tap a location and press "get directions" to get directions to a location.
+        </p>
+        <a class="btn btn-dark" data-toggle="collapse" href="#expandStep3" role="button" aria-expanded="false"
+          aria-controls="expandStep3">
+          Map with Drug Boxes
+        </a>
+        <div class="collapse" id="expandStep3">
+          <div class="map" id="boxMap" aria-label="Drug Box Map"></div>
+        </div>
+      </div>
+    </div>
+    <div class="space"></div>
+    <!--START CARD-->
+    <div class="timeline-card container-fluid card">
+      <div id="Seek" class="card-body">
+        <h2 class="card-title" role="doc-subtitle"><b>Seek</b> Help.</h2>
+        <p class="card-body" role="main" aria-label="Step 4 Information">
+          There are a number of different signs and symptoms to look for in individuals experiencing opioid abuse or
+          withdrawal. If you are experiencing these symptoms yourself or see them in a loved one, seek help
+          immediately.
+          Symptoms of abuse can be both physical, behavioral, or psychological.
+          They include (but are not limited to) drowsiness,
+          shallow or slow breathing, nausea, vomiting, constipation,
+          physical agitation, poor decision making,
+          slurred speech, euphoria,
+          irritability, lowered motivation, anxiety attacks, depression. Symptoms could be signs of abuse of opioids.
+        </p>
+        <p class="card-body" role="main" aria-label="step 4 information">
+          If opioid abuse continues in a loved one for weeks after they have finished their prescription, they are at
+          risk of physical addiction.
+          Withdrawl symptoms include
+          nausea, chills, diarrhea, shaking pain, depression, insomnia, fatigue.
+          If you are experiencing withdrawals,
+          work with your doctor to lower your dose over time, or seek help from a care facility.</br>
+          Mapped below are the care facilities that are availabe in Connecticut.
+        </p>
+        <a class="btn btn-dark" data-toggle="collapse" href="#expandStep4" role="button" aria-expanded="false"
+          aria-controls="collapse">
+          Map with Care Facilities
+        </a>
+        <div class="collapse" id="expandStep4">
+          <div class="map" id="careMap"></div>
+        </div>
+      </div>
+    </div>
+    <!--END CARD-->
+    <div class="space"></div>
+    <!--START CARD-->
+    <div class="timeline-card container-fluid card">
+      <div id="Assist" class="card-body">
+        <h2 class="card-title" role="doc-subtitle"><b>Assist</b> loved ones in need.</h2>
+        <p class="card-body" role="main" aria-label="step 5 information">
+          If a loved one continues abusing opioids over an extended period of time, then they are at risk of overdose.
+          Naxolone is a drug which can prevent overdose in an emergency.
+          Provided below is a map of all all locations that distribute Naxolone in Connecticut.
+        </p>
+        <a class="btn btn-dark" data-toggle="collapse" href="#expandStep5" role="button" aria-expanded="false"
+          aria-controls="collapse">
+          Map
+        </a>
+        <div class="collapse" id="expandStep5">
+          <div class="map" id="naxoloneMap"></div>
+        </div>
+      </div>
+    </div>
+    <!--END CARD-->
+    <div class="space"></div>
+    <!--START CARD-->
+    <div class="timeline-card container-fluid card">
+      <div id="Call" class="card-body">
+        <h2 class="card-title" role="doc-subtitle"><b>Call</b> for help.</h2>
+        <p class="card-body" role="main">If you or a loved one is in need of additional help with opioid addiciton,
+          please call the toll-free, 24/7, confidential Opioid hotline with the button below.
+          </br>However, if you or a loved one is in danger, <b>do not hesitate to call 911.</b></p>
+        <a id='Hotline' class="btn btn-warning" role="button" href="tel:1-352-771-2700">Hotline: 352-771-2700</a>
+      </div>
+    </div>
+    <!--END CARD-->
+  </div>
+  <div style="height:10px;"></div>
+  <div id="Info" class="card" role="">
+    <h4><b>About</b> this website</h4>
+    <p>This website was made for the <i>Connecticut Technology Council's</i> College Tech Challenge.</p>
+    <p>Data used from this app was pulled from <a href="https://data.ct.gov">data.ct.gov</a>.</p>
+    <ul>
+      <li><a href="https://data.ct.gov/Health-and-Human-Services/Accidental-Drug-Related-Deaths-2012-2017/rybz-nyjw">Accidental
+          Drug Related Deaths (2012-2017)</a></li>
+      <li><a href="https://data.ct.gov/Health-and-Human-Services/Locations-of-Prescription-Drug-Boxes-Map/5e4g-stz3">Locations
+          of Prescription Drug Boxes</a></li>
+      <li><a href="https://data.ct.gov/Health-and-Human-Services/Substance-Abuse-Care-Facilities/htz8-fxbk">Substance
+          Abuse Care Facilities</a></li>
+      <li><a href="https://data.ct.gov/Public-Safety/Pharmacies-offering-Narcan-Evzio-and-other-brands-/tbgy-vw5z">Pharmacies
+          offering Narcan, Evzio and other brands of Naloxone
+        </a></li>
+    </ul>
+    <p>For information on the creation of this webpage, please visit <a href="https://github.com/theFatDads/">our
+        Team's Github
+        page</a>.</p>
+  </div>
+</body>
+<!--Data-importing Maps Functions included in Main.js-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0ryZpgxKmnM81pq9e-tAbh7Zu39G5BBI"></script>
+<script src="js/MapsData.js"></script>
+<!--Main js File-->
+<script src="js/main.js"></script>
+
+</html>
